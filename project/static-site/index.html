@@ -1,0 +1,80 @@
+
+    <head>
+    <title>EFPO: Registeration Form</title>
+</head>
+ <body>
+    <!--<form action="bubmit.html"-->
+      <style>
+        h1{
+            color: red; margin-top: 1em; margin-bottom: 1em;
+          }
+        div1{
+             margin-left: 7em;
+          }
+        hr{
+            color: orange; margin-left: 7em;
+          }
+        h3{
+            color: cornflowerblue; margin-top: 2em; margin-bottom: 2em; margin-left: 7em;
+          }
+        label{
+                display: inline-block;
+                width: 150px;
+                padding-left: 4em;
+             }
+        div{
+             background-color: cadetblue ;  margin-top: 2em; margin-bottom: 2em; margin-left: 9em;  border-radius: 8pt; 
+               margin-right: 31em; padding-top: 1em; padding-bottom: 1em;
+           }</style>
+
+        <h1><img src="EPFO_logo.gif" width="6.1%">
+          Employee's Provident Fund Organisation, India</h1>
+        <div1><i>Ministry Of Labour & Employment, Government Of India</i></div1>
+        <hr>
+        <h3>Establishment Details</h3>
+  <div>
+  
+    <label><h4>TAN</h4></label><input type="text" placeholder="Enter TAN"> 
+    <label><h4>Establishment Name </h4></label><input type="text" placeholder="Enter Your Name">
+  
+<br>
+    <label><h4>Address Line 1</h4></label><textarea placeholder="Enter Your Address"></textarea>
+    <label><h4>Address Line 2</h4></label><textarea placeholder="Enter Address"></textarea>
+<br>
+    <label><h4>City</h4></label><input type="text" placeholder="Enter City">
+     <label><h4>State</h4></label><select id="stateId" name="stateId" style="width: 169.6;">
+        <option value>--Select--</option>
+        <option value="1"> Maharashtra</option>
+        <option value="2"> AP</option></select>
+<br>
+    <label><h4>District</h4></label><select id="districtId" name="districtId" style="width: 169.6;">
+        <option value>--Select--</option>
+        <option value="1"> Pune</option>
+        <option value="2"> Nagar</option></select>
+    <label><h4>Pincode</h4></label><input type="number" placeholder="(0-6)">
+<br>
+    <label><h4>Authorized Person Name</h4></label><input type="text" placeholder="Enter Name">
+        <label><h4>Authorized Person Designation</h4></label><input type="text" placeholder="Enter Designation">
+ <br>   
+        <label><h4>Mobile No.</h4></label><input type="number" placeholder="Enter Your Mob No.">
+        <label><h4>Email</h4></label><input type="email" placeholder="Enter Email">
+<br>
+    <label><h4>Gender:</h4></label><input type="radio" name="Gender" value="Male">Male
+             <input type="radio" name="Gender" value="Female">Female
+  </div>
+    
+            <h3>National Industrial Classification Code </h3>
+    <div>
+            <label><h4>Section</h4></label><input type="text" placeholder="Enter Section">
+                <label><h4>Division</h4></label><input type="text" placeholder="Enter Division">
+<br>          
+                <label><h4>Group</h4></label><input type="text" placeholder="Enter Group">
+                <label><h4>Class</h4></label><input type="text" placeholder="Enter Class">
+<br>
+            <label><h4>Upload Documents</h4></label><input type="file" id="myfile" name="myfile" multiple style="width: 169.6;">
+            <label><h4>Select Range</h4></label>0<input type="range" id="vol" name="vol" min="0" max="50">50
+    </div>       
+             <!-- <p><input type="submit" value="Submit"></p>
+    </form>-->
+
+</body>
