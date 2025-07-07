@@ -1,5 +1,7 @@
 Cloud Automation Deployment 
+
 Overview
+
 This project automates the deployment of a static HTML/CSS website on AWS EC2 using Infrastructure as Code and containerization tools. It demonstrates DevOps best practices using Terraform for provisioning, Ansible for configuration, and Docker for application deployment.
 Tools & Technologies Used
 Tool/Service	Purpose
@@ -32,6 +34,7 @@ terraform validate
 terraform plan 
 terraform apply
 4.	Confirm to create EC2 instance and output the public IP.
+   
 Part 2: Server Configuration with Ansible
 1.	Installation of Ansible by 
      	sudo apt install ansible -y
@@ -53,6 +56,7 @@ Part 3: Docker Container Deployment
 	docker build -t static-site ./static-site
 	docker run -d -p 80:80 static-site
 5.	Visit  http://3.250.99.137  to view the webpage.
+   
 Part 4: CI/CD Pipeline with GitHub Actions 
 CI/CD automation has been implemented using GitHub Actions:
 •	Workflow file: .github/workflows/deploy.yml
@@ -64,13 +68,13 @@ o	Build Docker image by using command
 o	Deploy to EC2 via SSH
 This ensures every code update to the repo is tested, built, and deployed automatically to the cloud environment.
 Final Deliverables
-•	Terraform scripts
-•	Ansible playbook
-•	Dockerfile and web app
-•	GitHub Actions workflow
-•	Functional public web app (on EC2)
-•	GitHub repository with README
-•	Screenshots and architecture diagram in report
+• Terraform scripts
+• Ansible playbook
+• Dockerfile and web app
+• GitHub Actions workflow
+• Functional public web app (on EC2)
+• GitHub repository with README
+• Screenshots and architecture diagram in report
 
 
 Repository
